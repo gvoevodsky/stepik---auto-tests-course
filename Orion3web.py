@@ -1,0 +1,1 @@
+import timefrom selenium import webdriverdriver = webdriver.Chrome('\C:\webdriverChrome\chromedriver.exe')driver.get("http://192.168.0.223/")time.sleep(3)print(driver.page_source)driver.switch_to.frame('left')time.sleep(3)driver.find_element_by_css_selector("tbody > tr:nth-child(10) > td > a").click()time.sleep(3)driver.switch_to.frame('left')driver.close()
